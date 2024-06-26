@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Armstrong number or not</title>
+  </head>
+  <body>
+    <script>
+        
+        let num=parseInt(prompt("enter number"));
+        let temp=num;
+        //counting no of digits
+        let count=0;
+        while(temp!=0){
+            temp=parseInt(temp/10);
+            count++;
+        }
+        temp=num;
+        let sum=0;
+        //calculating armstrong
+        while(temp!=0){
+            let rem=temp%10;
+            sum+=math.pow(rem,count);
+            temp=parseInt(temp/10);
+        }
+        //checking armstrong or not
+        if(sum==num){
+            document.write("Armstrong");
+        }
+        else{
+            document.write("not armstrong");
+        }
+    </script>
+  </body>
+</html>
